@@ -33,29 +33,34 @@
             color: #000;
             text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
             font-size: 7rem;
-            display: flex;
+            /*display: flex;*/
             justify-content: center;
             align-items: center;
             display: none;
         }
 
-        @media (max-width: 480px) {
-            #box {
+        @media (max-width: 480px){
+            #box1{
                 display: block;
             }
         }
-        
     </style>
 </head>
 <body>
     <div class="main_header">
-        <div class="center_div" id=box>
+        <div class="center_div" id="box1">
                 Welcome to AASHAYEIN 2024 ✨🎉
         </div>
     </div>
     <script src="./confetti.js"></script>
     <script>
-        confetti.start();
+        const start = () => {
+            setTimeout(function(){
+                confetti.start();
+            });
+        };
+
+        start();
     </script>
 </body>
 </html>
