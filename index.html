@@ -36,15 +36,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            display: none;
         }
+
+        @media (max-width: 480px) {
+            #box {
+                display: block;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <div class="main_header">
-        <div class="center_div">
-            <p>
+        <div class="center_div" id=box>
                 Welcome to AASHAYEIN 2024 ✨🎉
-            </p>
         </div>
     </div>
     <script src="./confetti.js"></script>
