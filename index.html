@@ -3,64 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashayein 2K24</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>Welcome to Aashayein and Esperanza 2024</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            height: 100vh;
+            background: url('bg3.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black; /* text color */
             font-family: 'Dancing Script', cursive;
         }
 
-        html{
-            font-size: 62.5%;
+        h1 {
+            font-size: 36px;
         }
 
-        .main_header {
-            width: 100vw;
-            height: 100vh;
-            background-color: hsl(0, 0%, 94%);
-            display: grid;
-            place-items: center;
-        }
-
-        .center_div {
-            min-width: 50vw;
-            height: 40 vh;
-            color: #000;
-            text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-            font-size: 7rem;
-            /*display: flex;*/
-            justify-content: center;
-            align-items: center;
-            display: none;
-        }
-
-        @media (max-width: 480px){
-            #box1{
-                display: block;
-            }
+        p {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div class="main_header">
-        <div class="center_div" id="box1">
-                Welcome to AASHAYEIN 2024 ✨🎉
-        </div>
+    <div>
+        <h1>Welcome to Aashayein and Esperanza 2024 🎉✨</h1>
+        <p>Feel the excitement and join us for an amazing event!</p>
     </div>
-    <script src="./confetti.js"></script>
-    <script>
-        const start = () => {
-            setTimeout(function(){
-                confetti.start();
-            });
-        };
-
-        start();
-    </script>
 </body>
 </html>
+
+
+        
+       
